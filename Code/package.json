@@ -1,0 +1,28 @@
+{
+    "name": "rummy-o",
+    "version": "0.0.1",
+    "description": "A web-based working prototype of the Rummy-O tile game",
+    "main": "server.js",
+    "scripts": {
+        "test": "test",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/RLiscanoUOIT/sofe2720w20-project-week-1-group-13.git"
+    },
+    "keywords": [
+        "Rummy-O",
+        "socket"
+    ],
+    "author": "Tiwaloluwa Ojo, Tanzir Hossain, Cameron Diaze, Aryan Desai",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/RLiscanoUOIT/sofe2720w20-project-week-1-group-13/issues"
+    },
+    "homepage": "https://github.com/RLiscanoUOIT/sofe2720w20-project-week-1-group-13#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "socket.io": "^2.3.0"
+    }
+}
