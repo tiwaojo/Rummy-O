@@ -27,5 +27,5 @@ io.on('connection', function(socket) {
   socket.on('new player', function() {
     player[socket.id] = {
       
+        }
     };
-  });
