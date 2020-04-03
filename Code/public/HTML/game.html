@@ -15,15 +15,58 @@
 
     <!-- Permanent Marker Font -->
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <!-- <title>Rummy-O</title> -->
+    <title>Rummy-O</title>
 
     <script src="../game.js"></script>
 
     <script src="../socket.io/socket.io.js"></script>
 </head>
 
-<body>
-    <a class="top w3-round-xxlarge" href="http://localhost:5000/#hero" onclick="exitGame()">
+<body class="w3-animate-zoom">
+
+
+
+
+    <div class="py-4 rack">
+
+        <!-- div.col.card*14>img[src=../images/blankCard1.jpg alt="card$"] -->
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+
+
+        <!-- </div> -->
+        <!-- <div class=" py-4 rack"> -->
+
+        <!-- div.col.card*14>img[src=../images/blankCard1.jpg alt="card$"] -->
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+
+
+    </div>
+    <div class="container py-4 stack">
+
+        <!-- div.col.card*14>img[src=../images/blankCard1.jpg alt="card$"] -->
+        <div id="meld">
+            <h2>Meld</h2>
+        </div>
+        <div id="set"></div>
+
+        <!-- <a> -->
+        <div id="deck" onclick="">
+            <img src="../images/deck1.jpg" alt="top"></div>
+        <!-- </!-->
+    </div>
+    <a class="top w3-round-xxlarge" href="http://localhost:5000" onclick="exitGame()">
         <img src="../images/ghost-icon.svg" alt="top">
     </a>
 </body>
