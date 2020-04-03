@@ -48,7 +48,8 @@ html {
     background-image: url("../images/blankCard2.jpg");
     background-repeat: no-repeat;
     background-size: contain;
-    filter: invert(1);
+    background-blend-mode: difference;
+    /* filter: invert(1); */
     /* height: 90%; */
     width: 100px;
     height: 100px;
@@ -123,9 +124,6 @@ html {
 
 .hero h1:hover {
     transform: scale(2.9);
-    /* transition: ease-in-out 0.4s;
-    font-size: 200%; */
-    /* transition-timing-function: ease-in-out; */
 }
 
 h3 {
@@ -209,11 +207,11 @@ h4 #meld {
 }
 
 .card a {
-    color: #009ab5;
+    color: #b55400;
 }
 
 .card a:hover {
-    color: #b55400;
+    color: #009ab5;
 }
 
 .card h2 {
