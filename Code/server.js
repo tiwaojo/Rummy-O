@@ -22,3 +22,9 @@ setInterval(function() {
 server.listen(5000, function() {
     console.log('Starting server on port 5000');
 });
+io.on('connection', function(socket) {
+  socket.on('new player', function() {
+    player[socket.id] = {
+      
+    };
+  });
