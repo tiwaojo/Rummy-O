@@ -1,5 +1,4 @@
-// Dependencies 
-// can yall see this?
+// Dependencies
 var express = require('express');
 var http = require('http');
 var path = require('path');
@@ -24,8 +23,8 @@ server.listen(5000, function() {
     console.log('Starting server on port 5000');
 });
 //io.on('connection', function(socket) {
- // socket.on('new player', function() {
-  //  player[socket.id] = {
-      
-      //  }
-   // };
+// socket.on('new player', function() {
+//  player[socket.id] = {
+
+//  }
+// };
