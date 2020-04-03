@@ -86,11 +86,11 @@ function getCard(suit,value,deck)
     var newdeck = getDeck();
     shuffle(newdeck);
     </script>
-    <div class="py-4 rack">
 
+    <div class="py-4 rack">
         <!-- div.col.card*14>img[src=../images/blankCard1.jpg alt="card$"] -->
         <div class="card">
-            <h2 id="faceVal1"><script>getCard(value);</script></h2>
+            <h2 id="faceVal1"><script>newdeck[0].Value;</script></h2>
             <h6 id="numCard1">2</h6>
             <a href="#" type="button">MELD</a>
             <a href="#" type="button">SET</a>
