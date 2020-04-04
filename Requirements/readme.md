@@ -1,2 +1,1 @@
-Deposit your requirements in this folder.
-Note: These would have been defined in Lab 1.
+The stakeholders needs and requirements, initially from lab 1. We were tasked with firstly choosing who was responsible for which roles for both rounds. These roles were then tasked with developing needs and requirements, as well as constraints for our Rummy-O web application. Following this a set of scenarios were designed to properly present the requirements for the project. These requirements were listed utilizing the Visual Paradigm software.
