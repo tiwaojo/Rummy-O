@@ -1,3 +1,1 @@
-Deposit your use cases in this folder.
-Note: These would have been defined in Lab 2.
-
+The requirements from lab 1 were used to make use cases. The use cases allow us to have a system operational view to help capture requirements and refine requirements. A use case shows us a interaction between a product and its environment. The use cases were also tested to make sure they worked and were verified. Using these use cases allowed us to have a clearer sense of how the product will interact with the users.These use cases were listed utilizing the Visual Paradigm software.
