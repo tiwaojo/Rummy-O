@@ -12,25 +12,12 @@ Rummy-O (or Rummikub) is a multiplayer game where each player is to create eithe
 
 ## Table of Contents
 <ul>
-<li href="#requirements">
-  <h3>Requirements<h3>
-    <ul>
-      <li><li>
-      <ul>
-  <li> <li href="#requirements">
-  <h3>Requirements<h3>
-    <ul>
-      <li><li>
-      <ul>
-  <li> 
-<li href="#usecases">
-  <h3>Requirements<h3>
-    <ul>
-      <li><li>
-      <ul>
-  <li> <li href="#design">
-  <h3>Requirements<h3>
-    <ul>
-      <li><li>
-      <ul>
-  <li> <ul>
+            <li href="#requirements">
+                <h3>Requirements</h3>
+            </li>
+            <ul>
+                <li><h3>Use Case</h3></li>
+            </ul>
+            <ul> <li href="#requirements">
+                    <h3>Requirements</h3></li>
+                <ul>
