@@ -11,7 +11,7 @@ This is possible by leveraging the GitHub Actions Node.js functionality (I am as
 ## Table of Contents
 1. [**Objective**](#objective)
 2. [**Requiremnets](#requirements)
-    1. [Requirements](Requirements/Requirements.pdf)
+    1. [Requirements](/Requirements/Requirements.pdf)
     2. [Requirements List](Requirements/Requirements List.PNG)
 3. [**Use Cases**](#use-cases)
     1. [Use Cases](#Use Cases/Use Cases.pdf)
