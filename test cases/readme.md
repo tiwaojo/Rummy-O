@@ -1,2 +1,1 @@
-Include report on the test cases that you performed in your code in this folder. I expect to see results for acceptance testing.
-Acceptance tests are those tests that demonstrate that the product has achieved the business requirements of the product.
+A test case is a set of conditions or variables, using a tester to determine whether a system satifies requirements or works correctly. We used the tester for things like names, to verify if they are valid.
