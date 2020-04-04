@@ -8,16 +8,36 @@ This is possible by leveraging the GitHub Actions Node.js functionality (I am as
 # Rummy-O
 
 
-
 ## Table of Contents
-[Objective](#objective)
-[Requiremnets](#requirements)
-[Use Cases](#use-case)
-[Design](#design)
-[Code](#code)
-[Test Case](#test-case)
+1. [**Objective**](#objective)
+2. [**Requiremnets](#requirements)
+    1. [Requirements](Requirements/Requirements.pdf)
+    2. [Requirements List](Requirements/Requirements List.PNG)
+3. [**Use Cases**](#use-cases)
+    1. [Use Cases](#Use Cases/Use Cases.pdf)
+4. [**Design**](#design)
+    1. [Design](#Design/Design Models_Tables.pdf)
+5. [**Code**](#code)
+6. [**Test Case**](#test-case)
 
 
 
 ## Objective
 Rummy-O (or Rummikub) is a multiplayer game where each player is to create either a sets three tiles bearing the same figure in different colors, or sets of runs—three consecutive numbers in the same color. The first player to place all the tiles on their rack on the table wins. (<a href="techcrunch.com">techcrunch.com</a>)
+
+
+## Requirements
+The stakeholders needs and requirements, initially from lab 1. We were tasked with firstly choosing who was responsible for which roles for both rounds. These roles were then tasked with developing needs and requirements, as well as constraints for our Rummy-O web application. Following this a set of scenarios were designed to properly present the requirements for the project. These requirements were listed utilizing the Visual Paradigm software.
+
+## Use Cases
+
+
+
+## Design
+
+
+
+## Code
+
+
+## Test Case
