@@ -56,3 +56,5 @@ Lab 4 allowed us to focus on interaction and state models(behaviours) that are u
 
 ## Test Case
 A test case is a set of conditions or variables, using a tester to determine whether a system satifies requirements or works correctly. We used the tester for things like names, to verify if they are valid.
+
+We did a number of tests but due to the time constraint and we weren't able to complete. 
