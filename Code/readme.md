@@ -1,1 +1,1 @@
-Inlcude your source code in this folder. You can also include executables here as well. 
+The Code for the Rummy-O game involved a game developed using node.js backend using Websockets to provide real time communication between clients and server. The game was rendered on a html canvas. In order to code the program, we used all the use cases, the Software Architecture conceptual and the Interaction and state models.
