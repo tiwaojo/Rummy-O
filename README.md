@@ -30,6 +30,7 @@ Rummy-O (or Rummikub) is a multiplayer game where each player is to create eithe
 The stakeholders needs and requirements, initially from lab 1. We were tasked with firstly choosing who was responsible for which roles for both rounds. These roles were then tasked with developing needs and requirements, as well as constraints for our Rummy-O web application. Following this a set of scenarios were designed to properly present the requirements for the project. These requirements were listed utilizing the Visual Paradigm software.
 
 ## Use Cases
+The requirements from lab 1 were used to make use cases. The use cases allow us to have a system operational view to help capture requirements and refine requirements. A use case shows us a interaction between a product and its environment. The use cases were also tested to make sure they worked and were verified. Using these use cases allowed us to have a clearer sense of how the product will interact with the users.These use cases were listed utilizing the Visual Paradigm software.
 
 
 
