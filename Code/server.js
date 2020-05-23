@@ -13,8 +13,8 @@ app.get('/', function(request, response) {
     response.sendFile(path.join(__dirname, "../HTML/index.html"));
 });
 // app.use(express.static("images"));
-// Add the WebSocket handlers
-io.on('connection', function(socket) {});
+// Add the WebSocket handlers 
+io.on('connection', function(socket) {}); 
 setInterval(function() {
     io.sockets.emit('message', 'hi!');
 }, 1000);
