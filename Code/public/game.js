@@ -8,10 +8,10 @@ game.on('message', function (data) {
 
 // Copied and pasted same random num generator. Couldn't figure out how to create global variables
 var roomVal=Math.floor(Math.random()*3);
-console.log("This player is on room "+roomVal);
+
 //emits room message to the server indicating the player intends to join the room specified
 game.emit("joinRoom","room"+roomVal);
-game.emit("name",playerName);
+// game.emit("name",playerName);
 
 // Logs a message if the player fails to enter the room
 game.on("err",function(err){
@@ -21,7 +21,7 @@ console.log(err);
 game.on("Success",function(res){
 console.log(res);
 });
-
+console.log("This player is on room"+roomVal);
 //This code is intended to send clients name to server
 game.on("playerNames",function(res){
 console.log(res);

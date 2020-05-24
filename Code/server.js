@@ -45,13 +45,13 @@ gameNamespace.on('connection',function(socket){
 
     //Logs on the terminal that the clients have joined both the namespace and the room
 console.log("Someone has joined Namespace");
-console.log("Players are on room"+gameRoom);
+// console.log("Players are on room"+gameRoom);
 gameNamespace.emit("message","hi everyone");
 
 //checks if the room exists join the room. Else return an error message the room doesn't exist
 if(gameRoom.includes(gameRoom)){
     socket.join(gameRoom);
-    return socket.emit("Success","You have successfully joined this room"+gameRoom);
+    return socket.emit("Success","Player should be in this room"+gameRoom);
 }else{
     return socket.emit("err","ERROR, No Room Named"+gameRoom);
 }
