@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- W3School -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -35,87 +36,23 @@
 
 <body class="w3-animate-zoom">
 
-    <!-- <script>
-        const suits = ['red', 'blue', 'white', 'yellow'];
-        const values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, ];
-
-        function getDeck() {
-            var deck = new Array();
-
-            for (var i = 0; i < suits.length; i++) {
-                for (var x = 0; x < values.length; x++) {
-                    var card = {
-                        Value: values[x],
-                        Suit: suits[i]
-                    };
-                    deck.push(card);
-                }
-            }
-
-            var joker = {
-                Value: 'joker'
-            };
-            deck.push(joker);
-            deck.push(joker);
-            return deck;
-
-        }
-
-        function shuffle(deck) {
-            // for 1000 turns
-            // switch the values of two random cards
-            for (var i = 0; i < 1000; i++) {
-                var location1 = Math.floor((Math.random() * deck.length));
-                var location2 = Math.floor((Math.random() * deck.length));
-                var tmp = deck[location1];
-
-                deck[location1] = deck[location2];
-                deck[location2] = tmp;
-            }
-        }
-        var deck1 = getDeck();
-        console.log(deck1);
-        shuffle(deck1);
-        console.log(deck1);
-        console.log(getCard('red', '2', deck1))
-
-        function getCard(suit, value, deck) {
-            var Card = {
-                Value: value,
-                Suit: suit
-            }
-
-            for (i = 0; i < deck.length; i++) {
-                if (Card == deck[i]) {
-                    return deck[i];
-                    deck.splice(i, 1);
-                }
-            }
-        }
-    </script> -->
-
-    <script>
-        var newdeck = getDeck();
-        shuffle(newdeck);
-    </script>
-
     <div class="py-4 rack">
         <!-- div.col.card*14>img[src=../images/blankCard1.jpg alt="card$"] -->
-        <script>cardValue("faceVal0",0);</script> 
-        <script>cardValue("faceVal1",1);</script> 
-        <script>cardValue("faceVal2",2);</script> 
-        <script>cardValue("faceVal3",3);</script> 
-        <script>cardValue("faceVal4",4);</script> 
-        <script>cardValue("faceVal5",5);</script> 
-        <script>cardValue("faceVal6",6);</script> 
-        <script>cardValue("faceVal7",7);</script> 
-        <script>cardValue("faceVal8",8);</script> 
-        <script>cardValue("faceVal9",9);</script> 
-        <script>cardValue("faceVal10",10);</script> 
-        <script>cardValue("faceVal11",11);</script> 
-        <script>cardValue("faceVal12",12);</script> 
-        <script>cardValue("faceVal13",13);</script> 
-  
+        <script>cardValue("faceVal0", 0);</script>
+        <script>cardValue("faceVal1", 1);</script>
+        <script>cardValue("faceVal2", 2);</script>
+        <script>cardValue("faceVal3", 3);</script>
+        <script>cardValue("faceVal4", 4);</script>
+        <script>cardValue("faceVal5", 5);</script>
+        <script>cardValue("faceVal6", 6);</script>
+        <script>cardValue("faceVal7", 7);</script>
+        <script>cardValue("faceVal8", 8);</script>
+        <script>cardValue("faceVal9", 9);</script>
+        <script>cardValue("faceVal10", 10);</script>
+        <script>cardValue("faceVal11", 11);</script>
+        <script>cardValue("faceVal12", 12);</script>
+        <script>cardValue("faceVal13", 13);</script>
+
     </div>
     <div class="container py-4 stack">
 
@@ -133,6 +70,66 @@
         <div id="deck" onclick="">
             <img src="../images/deck1.jpg" alt="top"></div>
         <!-- </!-->
+
+        <div>
+            <table>
+                <tr>
+                    <th>Name:</th>
+                    <th>Score:</th>
+                </tr>
+
+                <tr>
+
+                    <!-- <th> -->
+                    <script>
+                        displayName();
+                    </script>
+                    <!-- </th> -->
+                    <th>
+                        10
+                    </th>
+                </tr>
+                <tr>
+
+                    <th>
+                        Player1
+                    </th>
+                    <th>
+                        10
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Player2
+                    </th>
+                    <th>
+                        12
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        Player3
+                    </th>
+                    <th>
+                        9
+                    </th>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+    <div class="players row">
+        <h2 class="player1">
+            Player1
+        </h2>
+        <h2 class="player2">
+            Player2
+        </h2>
+        <h2 class="player3">
+            Player3
+        </h2>
     </div>
     <a class="top w3-round-xxlarge" href="http://localhost:5000" onclick="exitGame()">
         <img src="../images/ghost-icon.svg" alt="top">
