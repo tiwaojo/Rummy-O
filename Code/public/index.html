@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- W3School -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -27,61 +28,92 @@
 </script>
 
 <header class="fixed-top w3-animate-opacity">
-    <div class="">
+   
 
-        <!-- <nav class="navbar"> -->
+        <a class="tutbtn top" href="#tutorial"> <img src="../images/light-bulb-icon.svg" alt="tutorial"></a>
 
-            <a class="tutbtn top" href="#tutorial"> <img src="../images/light-bulb-icon.svg" alt="tutorial"></a>
-            <!-- </button> -->
-        <!-- </nav> -->
-
-
-
-    </div>
 </header>
 
 <body class="w3-animate-opacity">
-    <section class="hero" id="hero">
-        <!-- <img src="../images/aditya-chinchure-hyN9aU9Tm-c-unsplash.jpg" alt="hero"> -->
+    <section class="hero" id="hero">       
         <h1>Rummy-O</h1>
-        
-        <!-- <br> -->
+    
         <a class="btn btn-lg btn-outline-warning waves-effect" href="#play" type="button">
-           Play
-      </a>
+            Play
+        </a>
 
 
 
     </section>
     <br><br><br><br><br><br><br>
     <div class="container py-4">
-        <h2 id="tutorial"> Rummy-O Game (Table version) <a class="tutbtn" href="#fastfwd"> <img src="..\images\fast_forward-black-18dp.svg" alt="fast forward"> </a> </h2><hr>
-        <h3 >
-            Rummy-O is a tile game similar to the rummy card game. Two to four players can play the game. There are 4 sets of tiles distinguished by four different colors. There are 13 tiles for each colour numbered from 1 to 13. The tile deck also contains 2 jokers.
-            In total then they are 54 tiles in the game. Shuffle the tiles Lay all the tiles face down on the table, and shuffle them around thoroughly. Select the starter Each player selects a tile from the shuffled mix. The players with the lowest tile
-            play first. The order of play rotates clockwise from the beginning player. Hand out the tiles Replace the beginner selection tiles, and shuffle the tiles again. Each player then selects 14 tiles. These tiles should be kept shielded from the
-            other players. Make initial melds Before players may put tiles on the table, they must make melds that equal at least 25 points in one or more sets. One option for a meld is a run of three consecutive tiles in the same color, such as 10, 11
-            and 12 in blue. The other option is three of the same number in different colors. The number on the tile equals the amount of points it is worth. The meld must come from the tiles in the player's hand. (Note: The joker tile can take on any
-            value and color) SOFE 2720 Project Description Jan 2020 Author: Dr. Ramiro Liscano Try to eliminate tiles The object of the game is to eliminate all the tiles in a player's hand first. This is achieved by making runs and sets or by adding
-            to other runs and sets on the table. For instance, if on the table there is a set of three 10s, another player may place a fourth 10 down. If no play can be made during a turn, the player has to pick a tile. Re-melding tiles Tiles on the board
-            can be moved about and re-melded. The main motivation in doing is for a player to be able to play a tile from their hand. For example, if on the table there is a set of four 10s and a player has two tens of a different color in his/her hand
-            they can use one of the tens in the board to create a set. Tiles on the board can be re-melded in any way as long as the end result are valid runs and sets. (Note: Jokers cannot be moved to other melds. They keep their value once they are
-            played on the board) Replacing the Jokers A Joker that has been played on the board can be used by a player if they have the tile that the Joker represents in their hand. This tile is swapped with the Joker. The Joker was be played during
-            that player’s turn. (Note: For sets of 3 tiles that include a Joker, the Joker can represent either of the 2 missing tile colors in the set. For example, for a set consisting of a blue 10, red 10, and a Joker, the Joker can be replaced with
+        <h2 id="tutorial"> Rummy-O Game (Table version) <a class="tutbtn" href="#fastfwd"> <img
+                    src="..\images\fast_forward-black-18dp.svg" alt="fast forward"> </a> </h2>
+        <hr>
+        <h3>
+            Rummy-O is a tile game similar to the rummy card game. Two to four players can play the game. There are 4
+            sets of tiles distinguished by four different colors. There are 13 tiles for each colour numbered from 1 to
+            13. The tile deck also contains 2 jokers.
+            In total then they are 54 tiles in the game. Shuffle the tiles Lay all the tiles face down on the table, and
+            shuffle them around thoroughly. Select the starter Each player selects a tile from the shuffled mix. The
+            players with the lowest tile
+            play first. The order of play rotates clockwise from the beginning player. Hand out the tiles Replace the
+            beginner selection tiles, and shuffle the tiles again. Each player then selects 14 tiles. These tiles should
+            be kept shielded from the
+            other players. Make initial melds Before players may put tiles on the table, they must make melds that equal
+            at least 25 points in one or more sets. One option for a meld is a run of three consecutive tiles in the
+            same color, such as 10, 11
+            and 12 in blue. The other option is three of the same number in different colors. The number on the tile
+            equals the amount of points it is worth. The meld must come from the tiles in the player's hand. (Note: The
+            joker tile can take on any
+            value and color) SOFE 2720 Project Description Jan 2020 Author: Dr. Ramiro Liscano Try to eliminate tiles
+            The object of the game is to eliminate all the tiles in a player's hand first. This is achieved by making
+            runs and sets or by adding
+            to other runs and sets on the table. For instance, if on the table there is a set of three 10s, another
+            player may place a fourth 10 down. If no play can be made during a turn, the player has to pick a tile.
+            Re-melding tiles Tiles on the board
+            can be moved about and re-melded. The main motivation in doing is for a player to be able to play a tile
+            from their hand. For example, if on the table there is a set of four 10s and a player has two tens of a
+            different color in his/her hand
+            they can use one of the tens in the board to create a set. Tiles on the board can be re-melded in any way as
+            long as the end result are valid runs and sets. (Note: Jokers cannot be moved to other melds. They keep
+            their value once they are
+            played on the board) Replacing the Jokers A Joker that has been played on the board can be used by a player
+            if they have the tile that the Joker represents in their hand. This tile is swapped with the Joker. The
+            Joker was be played during
+            that player’s turn. (Note: For sets of 3 tiles that include a Joker, the Joker can represent either of the 2
+            missing tile colors in the set. For example, for a set consisting of a blue 10, red 10, and a Joker, the
+            Joker can be replaced with
             a black or yellow 10 and reused by the player as any other tile)
         </h3>
-        
-        <div id="fastfwd" ><hr><div id="tldr">
-        <iframe  width="1024" height="576" src="https://www.youtube.com/embed/wSuVZtTrPU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div><hr></div>
+
+        <div id="fastfwd">
+            <hr>
+            <div id="tldr">
+                <iframe width="1024" height="576" src="https://www.youtube.com/embed/wSuVZtTrPU8" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <hr>
+        </div>
 
 
     </div>
-    <!-- <div style="height:100vh"></div> -->
+    
     <div id="play">
-        <!-- <button type="button" class="btn btn-lg btn-outline-warning waves-effect">
-            </button> -->
-        <a type="button" class="btn btn-lg btn-outline-warning waves-effect" href="../HTML/game.html">Join a Game</a>
+        
+        <div id="quickGame">
+            <button type="button" class="btn btn-lg btn-outline-warning waves-effect" onclick="quickGame()">               
+                Quick Game
+            </button>
+
+        </div>
+        <div id="createRoom"><button type="button" class="btn btn-lg btn-outline-danger waves-effect"
+                onclick="createRoom()">
+
+                Create a Room</button></div>
+
+        <!-- <form> <input type='number' name='clientRoom' id='clientRoom' placeholder='Join a Room' max='1000000'                min='1' onSubmit='roomChoice()'> <input type='submit' value='submit' onClick='roomChoice()'> </form> -->
 
     </div>
 
