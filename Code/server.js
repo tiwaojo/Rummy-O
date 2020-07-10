@@ -21,7 +21,6 @@ var roomVal = Math.floor(Math.random() * 103);
 var gameRoom = "room" + roomVal;
 // io.in("roomVal"+roomVal).emit("roomVal",roomVal);
 
-
 //On connection to the socket, the server terminal logs a message 'a user connected. [gameRoom] initiated for all clients'
 io.on('connection', function (socket) {
 
@@ -64,7 +63,11 @@ console.log("Player has successfully joined " + gameRoom);
         console.log('user disconnected');
     });
 
-    io.emit('some event', { someProperty: 'some value', otherProperty: 'other value' }); // This will emit the event to all connected sockets
+    socket.on('chat message', (msg) => {
+        io.emit('chat message', msg);
+      });
+
+    // io.emit('some event', { someProperty: 'some value', otherProperty: 'other value' }); // This will emit the event to all connected sockets
 
 });
 

@@ -23,21 +23,19 @@
     <script src="../socket.io/socket.io.js"></script>
 </head>
 
-<script>
-    name();
-</script>
+
 
 <header class="fixed-top w3-animate-opacity">
-   
 
-        <a class="tutbtn top" href="#tutorial"> <img src="../images/light-bulb-icon.svg" alt="tutorial"></a>
+
+    <a class="tutbtn top" href="#tutorial"> <img src="../images/light-bulb-icon.svg" alt="tutorial"></a>
 
 </header>
 
 <body class="w3-animate-opacity">
-    <section class="hero" id="hero">       
+    <section class="hero" id="hero">
         <h1>Rummy-O</h1>
-    
+
         <a class="btn btn-lg btn-outline-warning waves-effect" href="#play" type="button">
             Play
         </a>
@@ -99,11 +97,13 @@
 
 
     </div>
-    
+
     <div id="play">
-        
+        <script>
+            name();
+        </script>
         <div id="quickGame">
-            <button type="button" class="btn btn-lg btn-outline-warning waves-effect" onclick="quickGame()">               
+            <button type="button" class="btn btn-lg btn-outline-warning waves-effect" onclick="quickGame()">
                 Quick Game
             </button>
 
@@ -121,6 +121,7 @@
         <img src="../images/rocket-icon.svg" alt="top">
     </a>
 </body>
+
 <script src="../game.js"></script>
 
 </html>

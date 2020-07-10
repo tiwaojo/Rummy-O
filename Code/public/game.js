@@ -1,4 +1,51 @@
 //'Emit' to send data, 'on' to receive data
+// (function () {
+// just drag your whole code from your script.js and drop it here
+
+// var playerName;
+class Player {
+
+    constructor(name, handCards) {
+        // var playerName;
+        this.playerName = name;
+        this.playerCards = handCards;
+    }
+
+    // get playerName() {
+    //     return this.playerName;
+    // }
+    // set playerName(x) {
+    //     this.playerName = x;
+    // }
+
+}
+newPlayer = new Player();
+
+function name() {
+    var x;
+    newPlayer.playerName = x;
+    x = prompt("Please Insert a name: ");
+    if (x == null || x == "" || x.startsWith(" ") || x.endsWith(" ") || x == "null") {
+        name();
+    }
+
+    //Logs the players name and creates an object with for the player
+    console.log(newPlayer);
+
+
+    alert("Welcome: " + x);
+    //  return playerName;
+}
+function displayName() {
+    // newPlayer.playerName=playerName;
+    document.write("<th>" + playerName + "</th>")
+}
+
+//This code is intended to send clients name to server
+socket.on("playerNames", function (res) {
+    console.log(res);
+});
+
 
 //Client side connection to tell Socket.IO client to connect to namespace room
 var socket = io.connect();
@@ -8,7 +55,6 @@ socket.on('message', function (data) {
 
 
 var randRoom = Math.floor(Math.random() * 103);
-
 
 
 // game.emit("name",playerName);
@@ -21,33 +67,16 @@ socket.on("err", function (err) {
 socket.on("Success", function (res) {
     console.log(res);
     window.location.href = "../HTML/game.html";
-});
-
-//This code is intended to send clients name to server
-socket.on("playerNames", function (res) {
-    console.log(res);
+    newPlayer.card
 });
 
 
-var playerName;
-function name() {
-    playerName = prompt("Please Insert a name: ");
-    if (playerName == null || playerName == "" || playerName.startsWith(" ") || playerName.endsWith(" ") || playerName == "null") {
-        name();
-    }
-    console.log(playerName);
-    //  return playerName;
-}
-alert("Welcome: " + playerName);
 
-function displayName() {
-    // playerName;
-    document.write("<th>" + playerName + "</th>")
-}
+
 
 // game.emit("player",playerName);
 // sending to all clients in 'game1' and/or in 'game2' room, except sender
-game.on('room').emit('name', playerName);
+game.on('room').emit('name', newPlayer.playerName);
 
 
 function exitGame() {
@@ -80,7 +109,7 @@ function joinGame(roomVal) {
 // The player can create a unique room and join that room 
 var uniqueRoom;
 function createRoom() {
-alert("Enter this num '"+randRoom+"' below");
+    alert("Enter this num '" + randRoom + "' below");
     //Replaces the create room button with a form.
     //Upon the forms submittion, the roomChoice() function will determine the
     document.getElementById("createRoom").innerHTML = "<form onSubmit='roomChoice()' > <input type='number' name='clientRoom' id='clientRoom' placeholder='Input room number' max='1000000' min='1' onSubmit='roomChoice()'> <input type='submit' value='submit' onClick='roomChoice()'> </form>";
@@ -119,11 +148,24 @@ function fourPlayers() {
 function roomChoice() {
     uniqueRoom = document.getElementById("clientRoom").value;
 
-if (uniqueRoom==randRoom) {
-     socket.emit("uniqueRoom", uniqueRoom);
+    if (uniqueRoom == randRoom) {
+        socket.emit("uniqueRoom", uniqueRoom);
 
-    console.log("Player successfully joined " + uniqueRoom);
+        console.log("Player successfully joined " + uniqueRoom);
+    }
+
+
 }
 
-   
-}
+// TODO Attempting to establish a syncronous connection among the players. This is example code from socket.io website
+$('form').submit(function(e){
+    e.preventDefault(); // prevents page reloading
+    socket.emit('chat message', $('#m').val());
+    $('#m').val('');
+    return false;
+  });
+  socket.on('chat message', function(msg){
+    $('#messages').append($('<li>').text(msg));
+  });
+
+// })();

@@ -49,8 +49,8 @@ function getCard(suit, value, deck) {
 }
 var newdeck = getDeck();
 shuffle(newdeck);
-var faceVal = 0;
-var faceValIndex = "";
+// var faceVal = 0;
+// var faceValIndex = "";
 function cardValue(faceVal, faceValIndex) {
 	document.write("<div class='card'><h2 id='" + faceVal + "'> <h2 style=color:" + newdeck[faceValIndex].Suit + ">" + newdeck[faceValIndex].Value + "</h2> </h2> <h6 id=numCard" + faceValIndex + ">2</h6><a href='#' type='button'>MELD</a> <a href='#' type='button'>SET</a> </div>");
 	// "<div class='card'>";
@@ -66,3 +66,4 @@ function cardValue(faceVal, faceValIndex) {
 	//    '<h2 style="color:' + newdeck[faceValIndex].Suit + ';" >' + newdeck[faceValIndex].Value + "</h2>";
 
 }
+// SocketIO.emit();
