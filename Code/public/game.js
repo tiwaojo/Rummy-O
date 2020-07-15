@@ -123,7 +123,7 @@ function name() {
 //     }
 // }
 
-//Replaces the quick game button with a 2 or 4 player option. 
+//Replaces the quick game button with a 2 or 4 player option.
 //The player can select their choice and will be directed to a room with that # of players
 function quickGame() {
     document.getElementById("quickGame").innerHTML = "<button id='joinGame2'  type='button' class='btn btn-lg btn-outline-warning waves-effect' value='2' >2 Players</button>  <button id='joinGame4' type='button' class='btn btn-lg btn-outline-warning waves-effect' value='4' >4 Players</button>     ";
