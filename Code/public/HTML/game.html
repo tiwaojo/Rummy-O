@@ -4,14 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- W3School -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- Our CSS file -->
-    <link rel="stylesheet" href="../CSS/style.css">
+    
 
 
     <!-- <script src="/js/jquery.json-2.2.min.js"></script>
@@ -20,25 +13,40 @@
     <script src="/js/jquery-ui.min.js"></script> -->
 
 
+    
+    <title>Rummy-O</title> 
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- W3School -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Our CSS file -->
+    <link rel="stylesheet" href="../CSS/style.css">
     <!-- Permanent Marker Font -->
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <title>Rummy-O</title>
-
-    <script src="../game.js"></script>
-    <script src="../Deck.js"></script>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 
-    <script src="../socket.io/socket.io.js"></script>
+    <!-- <script src="../socket.io/socket.io.js"></script> -->
+   
+    <!-- <script src="../Deck.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+    <!-- <script src="../rummy-o.js"></script> -->
+    <script src="../game.js"></script>
 </head>
 
 
 
 <body class="w3-animate-zoom">
 
+
+<!-- <script>debugger</script> -->
+
+    <script>gameConn()</script>
     <div class="py-4 rack">
         <!-- div.col.card*14>img[src=../images/blankCard1.jpg alt="card$"] -->
-        <script>cardValue("faceVal0", 0);</script>
+        <!-- <script>cardValue("faceVal0", 0);</script>
         <script>cardValue("faceVal1", 1);</script>
         <script>cardValue("faceVal2", 2);</script>
         <script>cardValue("faceVal3", 3);</script>
@@ -51,9 +59,10 @@
         <script>cardValue("faceVal10", 10);</script>
         <script>cardValue("faceVal11", 11);</script>
         <script>cardValue("faceVal12", 12);</script>
-        <script>cardValue("faceVal13", 13);</script>
+        <script>cardValue("faceVal13", 13);</script> -->
 
     </div>
+    
     <div class="container py-4 stack">
 
         <!-- div.col.card*14>img[src=../images/blankCard1.jpg alt="card$"] -->
@@ -78,43 +87,10 @@
                     <th>Score:</th>
                 </tr>
 
-                <tr>
-
-                    <!-- <th> -->
-                    <script>
-                        displayName();
-                    </script>
-                    <!-- </th> -->
-                    <th>
-                        10
-                    </th>
+                <tr id="scoreBrd">
+            
                 </tr>
-                <tr>
-
-                    <th>
-                        Player1
-                    </th>
-                    <th>
-                        10
-                    </th>
-                </tr>
-                <tr>
-                    <th>
-                        Player2
-                    </th>
-                    <th>
-                        12
-                    </th>
-                </tr>
-
-                <tr>
-                    <th>
-                        Player3
-                    </th>
-                    <th>
-                        9
-                    </th>
-                </tr>
+                
             </table>
         </div>
 
@@ -135,5 +111,6 @@
         <img src="../images/ghost-icon.svg" alt="top">
     </a>
 </body>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
 
 </html>

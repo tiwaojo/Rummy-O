@@ -78,6 +78,7 @@ hr{
     margin: 3px;
     border-start-start-radius: 10px;
     font-family: 'Indie Flower', cursive;
+    cursor: grabbing;
 }
 
 .hero a .btn {

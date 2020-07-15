@@ -5,20 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "node",
+            "name": "Debug (Server Side)",
+            "program": "${workspaceFolder}/Code/server.js",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/server.js",
-            "skipFiles": [
-                "<node_internals>/**"
-            ]
+            
+            "type": "node"
         },
+              
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
+            "name": "Debug in Chrome (ClientSide)",
             "url": "http://localhost:5000",
-            "webRoot": "${workspaceFolder}"
+            "webRoot": "${workspaceFolder}/Code/public"
         }
     ]
 }

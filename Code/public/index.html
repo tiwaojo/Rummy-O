@@ -12,15 +12,13 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Our CSS file -->
     <link rel="stylesheet" href="../CSS/style.css">
-
-    <script src="../game.js"></script>
-
+  
     <!-- Permanent Marker Font -->
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <title>Rummy-O</title>
-
-    <script src="../socket.io/socket.io.js"></script>
+<script src="../game.js"></script>
+    <!-- <script src="../socket.io/socket.io.js"></script> -->
 </head>
 
 
@@ -85,7 +83,7 @@
             a black or yellow 10 and reused by the player as any other tile)
         </h3>
 
-        <div id="fastfwd">
+        <!-- <div id="fastfwd">
             <hr>
             <div id="tldr">
                 <iframe width="1024" height="576" src="https://www.youtube.com/embed/wSuVZtTrPU8" frameborder="0"
@@ -93,15 +91,13 @@
                     allowfullscreen></iframe>
             </div>
             <hr>
-        </div>
+        </div> -->
 
 
     </div>
 
     <div id="play">
-        <script>
-            name();
-        </script>
+       
         <div id="quickGame">
             <button type="button" class="btn btn-lg btn-outline-warning waves-effect" onclick="quickGame()">
                 Quick Game
@@ -122,6 +118,10 @@
     </a>
 </body>
 
-<script src="../game.js"></script>
+ <script>
+     
+            name();
+        </script>
+
 
 </html>

@@ -34,7 +34,7 @@ var deck1 = getDeck();
 console.log(deck1);
 shuffle(deck1);
 // console.log(deck1);
-console.log(getCard('red', '2', deck1))
+console.log(getCard('red', '2', deck1));
 function getCard(suit, value, deck) {
 
 
@@ -52,7 +52,8 @@ shuffle(newdeck);
 // var faceVal = 0;
 // var faceValIndex = "";
 function cardValue(faceVal, faceValIndex) {
-	document.write("<div class='card'><h2 id='" + faceVal + "'> <h2 style=color:" + newdeck[faceValIndex].Suit + ">" + newdeck[faceValIndex].Value + "</h2> </h2> <h6 id=numCard" + faceValIndex + ">2</h6><a href='#' type='button'>MELD</a> <a href='#' type='button'>SET</a> </div>");
+	document.write("<div class='card' draggable='true'><h2 id='" + faceVal + "'> <h2 style=color:" + newdeck[faceValIndex].Suit + ">" + newdeck[faceValIndex].Value + "</h2> </h2> <h6 id=numCard" + faceValIndex + ">2</h6></div>");
+{/* <a href='#' type='button'>MELD</a> <a href='#' type='button'>SET</a>  */}
 	// "<div class='card'>";
 	//        " <h2 id='"+faceVal+"'>";
 	//         '<h2 style="color:' + newdeck[faceValIndex].Suit + ';" >' + newdeck[faceValIndex].Value + "</h2>";
