@@ -85,7 +85,7 @@ function exitGame() {
 
 // // if the player clicks the button "Join a Game" a random room is created and the player joins that room
 
-// var enterRoom =0; 
+// var enterRoom =0;
 //     // socket.emit("confirmRoom",enterRoom);
 
 socket.on("roomVal", function (roomVal) {
@@ -97,7 +97,7 @@ socket.on("roomVal", function (roomVal) {
 
 //     function randRoom(roomVal) {
 //         joinGame("room"+roomVal);
-//         console.log("This player is on room" + roomVal); 
+//         console.log("This player is on room" + roomVal);
 // }
 
 function joinGame(roomVal) {
@@ -106,7 +106,7 @@ function joinGame(roomVal) {
 }
 
 
-// The player can create a unique room and join that room 
+// The player can create a unique room and join that room
 var uniqueRoom;
 function createRoom() {
     alert("Enter this num '" + randRoom + "' below");
@@ -123,7 +123,7 @@ function createRoom() {
     }
 }
 
-//Replaces the quick game button with a 2 or 4 player option. 
+//Replaces the quick game button with a 2 or 4 player option.
 //The player can select their choice and will be directed to a room with that # of players
 function quickGame() {
     document.getElementById("quickGame").innerHTML = "<button id='joinGame2'  type='button' class='btn btn-lg btn-outline-warning waves-effect' value='2' onclick='twoPlayers()' >2 Players</button>  <button id='joinGame4' type='button' class='btn btn-lg btn-outline-warning waves-effect' value='4' onclick='fourPlayers()'>4 Players</button>     ";
@@ -156,7 +156,12 @@ function roomChoice() {
 
 
 }
-
+function handCards(deck) {
+  for (var i=0; i<13;i++)
+  {
+    deck.pop();
+  }
+}
 // TODO Attempting to establish a syncronous connection among the players. This is example code from socket.io website
 $('form').submit(function(e){
     e.preventDefault(); // prevents page reloading
@@ -167,5 +172,74 @@ $('form').submit(function(e){
   socket.on('chat message', function(msg){
     $('#messages').append($('<li>').text(msg));
   });
+  const suits = ['red', 'blue', 'black', 'yellow'];
+  const values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,];
 
+
+  function getDeck() {
+  	var deck = new Array();
+
+  	for (var i = 0; i < suits.length; i++) {
+  		for (var x = 0; x < values.length; x++) {
+  			var card = { Value: values[x], Suit: suits[i] };
+  			deck.push(card);
+  		}
+  	}
+
+  	var joker = { Value: 'joker' };
+  	deck.push(joker);
+  	deck.push(joker);
+  	return deck;
+
+  }
+  function shuffle(deck) {
+  	// for 1000 turns
+  	// switch the values of two random cards
+  	for (var i = 0; i < 1000; i++) {
+  		var location1 = Math.floor((Math.random() * deck.length));
+  		var location2 = Math.floor((Math.random() * deck.length));
+  		var tmp = deck[location1];
+
+  		deck[location1] = deck[location2];
+  		deck[location2] = tmp;
+  	}
+  }
+  var deck1 = getDeck();
+  console.log(deck1);
+  shuffle(deck1);
+  // console.log(deck1);
+  console.log(getCard('red', '2', deck1))
+
+  function getCard(suit, value, deck) {
+
+
+  	var Card = { Value: value, Suit: suit }
+
+  	for (i = 0; i < deck.length; i++) {
+  		if (Card == deck[i]) {
+  			return deck[i];
+  			deck.splice(i, 1);
+  		}
+  	}
+  }
+  var newdeck = getDeck();
+  shuffle(newdeck);
+  // var faceVal = 0;
+  // var faceValIndex = "";
+  function cardValue(faceVal, faceValIndex) {
+  	document.write("<div class='card'><h2 id='" + faceVal + "'> <h2 style=color:" + newdeck[faceValIndex].Suit + ">" + newdeck[faceValIndex].Value + "</h2> </h2> <h6 id=numCard" + faceValIndex + ">2</h6><a href='#' type='button'>MELD</a> <a href='#' type='button'>SET</a> </div>");
+  	// "<div class='card'>";
+  	//        " <h2 id='"+faceVal+"'>";
+  	//         '<h2 style="color:' + newdeck[faceValIndex].Suit + ';" >' + newdeck[faceValIndex].Value + "</h2>";
+  	//         "</h2>";
+  	//         "<h6 id='numCard"+faceValIndex+"'>2</h6>";"<a href='#' type='button'>MELD</a>";
+  	//         "<a href='#' type='button'>SET</a>";
+  	//     "</div>";
+
+  	console.log(faceVal);
+  	//  document.getElementById(faceVal).innerHTML +=
+  	//    '<h2 style="color:' + newdeck[faceValIndex].Suit + ';" >' + newdeck[faceValIndex].Value + "</h2>";
+
+  }
+  // SocketIO.emit();
 // })();
