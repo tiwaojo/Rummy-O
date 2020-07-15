@@ -133,7 +133,7 @@ function quickGame() {
 function twoPlayers() {
     if (document.getElementById("joinGame2").value = 2) {
         alert("2");
-        return window.location.href = "../HTML/game.html";
+        return window.location.href = "../HTML/chat.html";
     }
 }
 
@@ -144,17 +144,17 @@ function fourPlayers() {
     }
 }
 
-//takes the value inputed by the user in the number form and determines whether the room is taken or not.
-function roomChoice() {
-    uniqueRoom = document.getElementById("clientRoom").value;
+// //takes the value inputed by the user in the number form and determines whether the room is taken or not.
+// function roomChoice() {
+//     uniqueRoom = document.getElementById("clientRoom").value;
 
-    if (uniqueRoom == randRoom) {
-        socket.emit("uniqueRoom", uniqueRoom);
+//     if (uniqueRoom == randRoom) {
+//         socket.emit("uniqueRoom", uniqueRoom);
 
-        console.log("Player successfully joined " + uniqueRoom);
-    }
+//         console.log("Player successfully joined " + uniqueRoom);
+//     }
 
-
+<<<<<<< HEAD
 }
 function handCards(deck) {
   for (var i=0; i<13;i++)
@@ -242,4 +242,20 @@ $('form').submit(function(e){
 
   }
   // SocketIO.emit();
+=======
+
+// }
+// function why(){$('form').submit(function(e){
+//     e.preventDefault(); // prevents page reloading
+//     socket.emit('chat message', $('#m').val());
+//     $('#m').val('');
+//     return false;
+//   });
+//   socket.on('chat message', function(msg){
+//     $('#messages').append($('<li>').text(msg));
+//   });}
+// TODO Attempting to establish a syncronous connection among the players. This is example code from socket.io website
+
+
+>>>>>>> 5727b1823940d00c46337839f6ada557057af61f
 // })();
