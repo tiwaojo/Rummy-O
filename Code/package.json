@@ -23,6 +23,6 @@
     "homepage": "https://github.com/RLiscanoUOIT/sofe2720w20-project-week-1-group-13#readme",
     "dependencies": {
         "express": "^4.17.1",
-        "socket.io": "^2.3.0"
+        "socket.io": "^2.4.0"
     }
 }
